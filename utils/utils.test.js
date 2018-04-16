@@ -13,3 +13,24 @@ it('should square a number', () => {
     var res = utils.square(5);
     expect(res).toBe(25).toBeA('number');
 })
+
+it('should verify first and last names are set', () => {
+    var res = utils.setName({ age: 25 }, "Anand Kumar");
+    expect(res).toBeA('object').toInclude({ firstName: 'Anand', lastName: 'Kumar' })
+})
+
+// it('should expect some values', () => {
+    // expect(12).toNotBe(12);
+    // expect({ name: 'Anand' }).toEqual({ name: 'Anand' });// For comparing Objects
+
+    // expect([2, 3, 6]).toInclude(6);
+    // expect([2, 3, 6]).toExclude(7);
+
+    // expect({
+    //     name: 'Anand',
+    //     age: 25,
+    //     location: 'Bangalore'
+    // }).toInclude({
+    //     age: 25
+    // })
+// })
